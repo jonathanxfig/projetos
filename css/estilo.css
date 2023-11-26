@@ -1,0 +1,890 @@
+/*Configurações da fonte do site*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+/*Configurações das Cores*/
+:root{
+    --cinza1:#cccccc;
+    --cinza2:#e6e6e6;
+    --azul1:#45baba;
+    --azul2:#69c9c9;
+    --azul3:#8ed7d7;
+}
+
+/*Configurações dos Navegadores*/
+*{
+    font-family:'roboto', san-serif;
+    font-size:18px;
+    font-weight:400;
+    text-decoration:none;
+    list-style-type:none;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/*Formatação do Corpo*/
+
+body {
+    background-color:var(--cinza2);
+}
+
+header {
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--azul3);
+    text-align: center;
+    border-radius: 0px 0px 12px 12px;
+    padding-top:1rem;
+    box-shadow: 0px 4px 3px var(--azul1)
+}
+
+nav li{
+    display:inline-block;
+    margin: 2rem 1rem;
+}
+
+nav a{
+    color:var(--azul1)
+}
+
+nav a:hover{
+    color:var(--cinza1);
+
+}
+
+/*Formatação dos Cards OFERTAS DO DIA*/
+
+.cards{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--cinza1);
+  margin:5% auto;
+  width: 90%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.produtos h2{
+    font-weight: 700;
+    color: var(--azul1);
+    letter-spacing: 2px;
+    padding-top:2%;
+}
+
+.produtos p{
+    font-size: 1.2rem;
+    color: var(--azul1);
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+.produtos a{
+    color:var(--azul1);
+    font-size:0.8rem;
+    font-weight: 700;
+    line-height: 2;
+
+}
+
+.produtos img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .produtos input[type="number"]{
+    width: 50px;
+    height: 50px;
+    padding: 1%;
+    background-color: white;
+    color: var(--azul1);
+    border: none;
+    margin-top: 3%;
+    margin-left: 3%;
+    border-radius: 10px;
+  }
+
+  .produtos input[type="button"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--azul1);
+    color: white;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    
+  }
+
+  .produtos input[type="button"]:hover{
+    background-color: var(--azul3);
+    cursor: pointer;
+  }
+
+  .produtos label {
+    color: var(--azul1);
+    font-weight: 700;
+  }
+
+  /*Formatação da Oferta do Dia*/
+
+  .ofertas {
+    font-size: 42;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--cinza2);
+    color:var(--azul1);
+    margin: 2% auto;
+    padding-top:2%; 
+  }
+
+  /*Formatação Formas de Pagamento*/
+
+  .pagamento{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width:100%;
+    margin:1% auto;
+    
+
+  }
+
+  .pag {
+    padding: 2%;
+
+  }
+
+  .pag h3 {
+    color: var(--azul1);
+  }
+
+  .pag img{
+    margin-top: 3%;
+  }
+
+  /*Rodapé*/
+
+  footer {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul3);
+    color: var(--azul1);
+    padding-top: 2%;
+    text-align: center;
+
+  }
+
+  .rodape a{
+    font-size: 12px;
+    color: var(--azul1);
+
+  }
+
+  .rodape img{
+    padding:5%;
+
+  }
+
+  /*FORMATAÇÃO DA PÁGINA CADASTRO.PHP*/
+
+  .cadastro{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+    
+  }
+
+  .cad{
+    width: 80%;
+
+  }
+
+  .cad h1{
+    font-size: 32px;
+    text-align: center;
+    color: var(--azul1);
+    font-weight: 700;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+
+  }
+
+  #cadastro input[type=text], input[type="number"], input[type="text"], input[type="email"], input[type="password"]{
+    width: 400px;
+    height: 50px;
+    color: var(--azul1);
+    text-align: center;
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 1%;
+
+  }
+
+  #cadastro input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--azul1);
+    color: white;
+    border: none;
+    margin-top: 3%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+  }
+
+  #cadastro input[type="submit"]:hover {
+    background-color: var(--azul3);
+    cursor: pointer;
+
+  }
+
+
+  .cad img{
+    max-width: 50%;
+    max-height: 50%;
+    margin: -1%;
+  }
+
+  /*Formatação da página ENTRAR.PHP*/
+
+  .login {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin:5% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .logar {
+    width: 80%;
+    height: 80%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    
+  }
+
+  #logar_img{
+    max-width: 50%;
+    max-height: 50%;
+    margin: 1%;
+
+  }
+
+  .logar h1 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--azul1);
+    font-weight: 700;
+    margin-bottom: 3%;
+    margin-top: 5%;
+
+  }
+
+  .logar input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--azul1);
+    color: white;
+    border: none;
+    margin-top: 3%;
+    border-radius: 10px;
+  }
+
+  .logar input[type="submit"]:hover{
+    background-color: var(--azul3);
+    cursor: pointer;
+  }
+
+
+  /*Formatação da Página do Usuário "usuario.php"*/
+
+  .barra_top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul1);
+    width: 95%;
+    margin: 2% auto;
+    padding: 1% 5%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .barra h1{
+    color: var(--azul3);
+  }
+
+  .barra a {
+    color:var(--azul3);
+  }
+
+  .usuario{
+    width: 95%;
+    height: 500;
+    background-color: var(--cinza1);
+    margin: -2% auto;
+    padding: 2%;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 2%;
+
+  }
+
+  .usuario h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--azul1);
+  }
+
+  .usuario p {
+    font-size: 18px;
+    color: var(--azul1);
+  }
+
+  /* FORMATAÇÃO DA PÁGINA SOBRE.HTML */
+
+  .sobre{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin:5% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .texto_sobre h2{
+    width: 90%;
+    font-size: 32px;
+    text-align: center;
+    color: var(--azul1);
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .texto_sobre p{
+    width: 90%;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    color: var(--azul1);
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .img_sobre{
+    max-width: 50%;
+    max-height: 50%;
+    margin: 1%;
+
+  }
+
+  /*CONFIGURAÇÃO DA PÁGINA CONTATO.PHP*/
+  
+  .contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cinza1);
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .cont {
+    width: 80%;
+
+  }
+
+  .cont h1{
+    font-size: 32px;
+    text-align: center;
+    color: var(--azul1);
+    font-weight: 700;
+    margin-bottom: 3%;
+    margin-top: 1%;
+
+  }
+
+  .cont input[type="text"], input[type="e-mail"], input[type="tel"]{
+    width: 400px;
+    height: 35px;
+    color: var(--azul1);
+    text-align: center;
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 1%;
+  }
+
+  .cont textarea{
+    width: 400px;
+    height: 200px;
+    color: var(--azul1);
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: none;
+
+  }
+
+  .cont input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--azul1);
+    color: white;
+    border:none;
+    margin-top: 3%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 1%;
+  }
+
+  .cont input[type="submit"]:hover{
+    background-color: var(--azul2);
+  }
+
+  .cont form{
+    text-align: center;
+  }
+
+  .cont img{
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  /* CONFIGURAÇÃO DA PÁGINA CATALOGO.PHP */
+
+  .catalogo_1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin:5% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .catalogo_text {
+    font-size: 42;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--cinza2);
+    color:var(--azul1);
+    margin: 2% auto;
+    padding-top:2%; 
+  }
+
+  .catalogo h2{
+    font-weight: 700;
+    color: var(--azul1);
+    letter-spacing: 2px;
+    padding-top:2%;
+}
+
+.catalogo p{
+    font-size: 1.2rem;
+    color: var(--azul1);
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+.catalogo a{
+    color:var(--azul1);
+    font-size:0.8rem;
+}
+
+.catalogo img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .catalogo input[type="number"]{
+    width: 50px;
+    height: 50px;
+    padding: 1%;
+    background-color: white;
+    color: var(--azul1);
+    border: none;
+    margin-top: 3%;
+    margin-left: 3%;
+    border-radius: 10px;
+  }
+
+  .catalogo input[type="button"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--azul1);
+    color: white;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    
+  }
+
+  .catalogo input[type="button"]:hover{
+    background-color: var(--azul3);
+    cursor: pointer;
+  }
+
+  .catalogo label {
+    color: var(--azul1);
+    font-weight: 700;
+  }
+
+  /* CONFIGURAÇÕES PÁGINA CATALOGO1*/
+
+  .catalogo_new {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin:5% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .catalogo_new input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--azul1);
+    color: white;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    
+  }
+
+  .catalogo_new input[type="submit"]:hover{
+    background-color: var(--azul3);
+    cursor: pointer;
+  }
+
+  .catalogo_new label {
+    color: var(--azul1);
+    font-weight: 700;
+  }
+
+  .catalogo_new h3{
+    font-weight: 700;
+    color: var(--azul1);
+    letter-spacing: 2px;
+    padding-top:2%;
+}
+
+.catalogo_new p{
+    font-size: 1.2rem;
+    color: var(--azul1);
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+.cart-link {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--azul1);
+}
+
+.cart-image {
+  width: 30px; /* Ajuste conforme necessário */
+  height: 30px; /* Ajuste conforme necessário */
+  vertical-align: middle; /* Alinha verticalmente a imagem */
+  margin-right: 5px; /* Adiciona um pequeno espaço à direita da imagem */
+}
+
+.catalogo_new input[type="number"]{
+  width: 50px;
+  height: 50px;
+  padding: 1%;
+  background-color: white;
+  color: var(--azul1);
+  border: none;
+  margin-top: 3%;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+
+/* CONFIGURAÇÃO DA PÁGINA CARRINHO */
+
+.carrinho {
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin:5% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.carrinho table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color:var(--cinza2);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.carrinho th, td {
+  
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.carrinho th {
+  background-color: var(--azul3);
+}
+
+.carrinho h1 {
+  color: var(--azul1);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.carrinho p {
+  color: var(--azul1);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.carrinho input[type="submit"]{
+  width: 190px;
+  height: 50px;
+  padding: 1%;
+  background-color: var(--azul1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+.carrinho input[type="submit"]:hover{
+  background-color: var(--azul3);
+  cursor: pointer;
+}
+
+/* CONFIGURAÇÃO DA PÁGINA FINALIZAR.PHP */
+
+.finalizar{
+  flex-flow: column nowrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin:5% auto;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.finalizar table {
+  align-items: center;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color:var(--cinza2);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.finalizar th, td {
+  
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.finalizar th {
+  background-color: var(--azul3);
+}
+
+.finalizar h1 {
+  align-self: baseline;
+  align-items: center;
+  color: var(--azul1);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.finalizar p {
+  color: var(--azul1);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.finalizar input[type="submit"]{
+  width: 190px;
+  height: 50px;
+  padding: 1%;
+  background-color: var(--azul1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+.finalizar input[type="submit"]:hover{
+  background-color: var(--azul3);
+  cursor: pointer;
+}
+
+.finalizar select {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--azul3);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Estilo quando o select está focado */
+.finalizar select:focus {
+  outline: none;
+  border-color: var(--azul1); /* Cor quando focado */
+  box-shadow: 0 0 5px var(--azul2); /* Sombra quando focado */
+}
+
+.finalizar label {
+  font-size: 18px;
+  color: var(--azul1);
+
+}
+
+/* CONFIGURAÇÃO DA PÁGINA CONFIRMACAO.PHP */
+
+.confirmacao {
+
+  align-content: space-around;
+    text-align: center;
+    background-color: var(--cinza1);
+    margin: 5% auto;
+    padding: 5%;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+    line-height: 1.75;
+}
+
+.confirmacao h1{
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--azul1);
+}
+
+.confirmacao p {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--azul1);
+}
+
+.confirmacao ul {
+  list-style-type: disc; /* Utiliza marcadores em formato de disco (ponto) */
+  margin: 10px 0; /* Adiciona margem acima e abaixo da lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.confirmacao li {
+  margin-bottom: 8px;
+  font-weight: bold; /* Torna os itens com a classe 'destaque' em negrito */
+  color: #ff0000;
+}
+
+
+
+
+
+
+/**/
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
